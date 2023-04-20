@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://cdn.glitch.com/586d6910-90c4-4f51-8c4f-6667bd6c2743%2Ffavicon.png?v=1630417962100" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <form>
+      <p>
+        <label for="name">Name</label>
+        <input id="name" name="text" type="text" placeholder="enter your name here" />
+      </p>
+      
+      <p>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" />
+      </p>
+      
+      <p>
+        <label for="date">Birthday</label>
+        <input id="date" name="date" type="date" />
+      </p>
+      
+      <p>
+        <label for="range">How are you doing today?</label>
+        Very Good<input id="range" name="range" type="range" />Very Bad
+      </p>
+      
+      <p>
+        Are you a student?
+        <label for="yes">Yes</label>
+        <input id="yes" name="radio" type="radio" value="yes" />
+        <label for="no">No</label>
+        <input id="no" name="radio" type="radio" value="no" />
+      </p>
+      
+      <p>
+        What programming language do you want to learn?
+        <label for="html">HTML</label>
+        <input id="html" name="checkbox" type="checkbox" value="yes" />
+        <label for="css">CSS</label>
+        <input id="css" name="checkbox" type="checkbox" value="no" />
+        <label for="js">JavaScript</label>
+        <input id="js" name="checkbox" type="checkbox" value="no" />
+      </p>
+      
+      <p>
+        <label for="year">What yaer are you in?</label>
+        <select id="year" name="year">
+          <option value="1year">1 year</option>
+          <option value="2year">2 year</option>
+          <option value="3year">3 year</option>
+          <option value="4year">4 year</option>
+        </select>
+      </p>
+      
+      <p>
+        Leave a message here<br>
+        <textarea id="textarea" name="textarea" col="5" rows="6"></textarea>
+      </p>
+      
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+      
+    </form>
+    
+    
+    
+    
+    <a href="/index.html" id="back">back</a>
+  </body>
+</html>

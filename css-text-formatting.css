@@ -1,0 +1,74 @@
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+.sans-serif {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.line-through {
+  text-decoration: red wavy line-through;
+}
+
+.underline-overline {
+  text-decoration: underline overline;
+}
+
+.dotted-underline {
+  text-decoration: 3px dotted underline;
+}
+
+.word-spacing {
+  word-spacing: 15px;
+}
+
+.letter-spacing {
+  letter-spacing: -2px;
+}
+
+.color {
+  color: ForestGreen;
+}
+
+.background-color {
+  background-color: Yellow;
+}
+
+.solid-text-shadow {
+  text-shadow: 3px 3px Black;
+}
+
+.soft-text-shadow {
+  text-shadow: 1px 1px 2px HotPink, -2px -2px 4px Orange, 0px 0px 12px Blue;
+}
