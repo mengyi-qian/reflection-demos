@@ -1,0 +1,42 @@
+html {
+  font-size: 24pt;
+}
+
+body {
+  width: 800px;
+}
+
+h1, h2, h3 {
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px grey;
+  text-align: justify;
+  text-decoration: underline 10px pink;
+}
+h1:hover, h2:hover, h3:hover {
+  color: yellow;
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+a {
+  font-style: italic;
+  color: blue;
+  white-space: wrap;
+  word-break: break-all;
+}
+a:hover {
+  font-style: normal;
+}
+
+span {
+  font-size: 0.5rem;
+}
+span:hover {
+  font-size: 1rem;
+}
+

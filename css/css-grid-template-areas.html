@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Grid (Template Areas) Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      *, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* set grid template areas */
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 15vw 5vw 10vw 15vw 25vw 20vw 10vw;
+        grid-template-rows: 25vh 10vh 5vh 20vh 15vh 10vh 15vh;
+        grid-template-areas:
+          "H B B L C C D"
+          "H A A A C C D"
+          "O A A A F P D"
+          "I I Q Q F E E"
+          "I I Q Q M E E"
+          "I I G J J J J"
+          "N K K J J J J";
+      }
+
+      /* style grid area */
+      li {
+        padding: 10px;
+        border-width: .5px;
+        border-style: inset;
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <ul>
+      <li style="grid-area: A;">Do not go gentle into that good night,</li>
+      <li style="grid-area: B;">Old age should burn and rave at close of day;</li>
+      <li style="grid-area: C;">Rage, rage against the dying of the light.</li>
+      <li style="grid-area: D;">Though wise men at their end know dark is right,</li>
+      <li style="grid-area: E;">Because their words had forked no lightning they</li>
+      <li style="grid-area: F;">Do not go gentle into that good night.</li>
+      <li style="grid-area: G;">Good men, the last wave by, crying how bright.</li>
+      <li style="grid-area: H;">Their frail deeds might have danced in a green bay,</li>
+      <li style="grid-area: I;">Rage, rage against the dying of the light.</li>
+      <li style="grid-area: J;">Wild men who caught and sang the sun in flight,</li>
+      <li style="grid-area: K;">And learn, too late, they grieved it on its way,</li>
+      <li style="grid-area: L;">Do not go gentle into that good night.</li>
+      <li style="grid-area: M;">Grave men, near death, who see with blinding sight</li>
+      <li style="grid-area: N;">Blind eyes could blaze like 4 meteors and be gay, Rage, rage against the dying of the light.</li>
+      <li style="grid-area: O;">And you, my father, there on the sad height,</li>
+      <li style="grid-area: P;">Curse, bless, me now with your fierce tears, I pray.</li>
+      <li style="grid-area: Q;">Do not go gentle into that good night.</li>
+      <li style="grid-area: R;">Rage, rage against the dying of the light.</li>
+    </ul>
+
+    
+    
+    
+    <a href="../index.html" id="back">back</a>
+  </body>
+</html>

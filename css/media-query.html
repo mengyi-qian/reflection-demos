@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Query Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      body {
+        background-color: LightPink;
+        color: White;
+      }
+      p {
+        display: none;
+      }
+      
+      @media screen and (max-width: 1280px) {
+        body {
+          background-color: Plum;
+        }
+      }
+      
+      @media screen and (max-width: 1080px) {
+        body {
+          background-color: SkyBlue;
+        }
+      }
+      
+      @media screen and (max-width: 840px) {
+        body {
+          background-color: YellowGreen;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: Khaki;
+        }
+      }
+      
+      @media print {
+        body {
+          background-color: White;
+          color: Black;
+        }
+        p{
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Resize your window :)</h1>
+    <p>Congratulations! You just discovered a hidden paragraph.</p>
+    
+    
+    
+    
+    
+    <a href="../index.html" id="back">back</a>
+  </body>
+</html>
