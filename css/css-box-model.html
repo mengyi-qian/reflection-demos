@@ -9,25 +9,46 @@
     <style>
 
       .box {
-        width: 200px;
+        width: 400px;
         height: 200px;
         background: green;
         margin: 50px;
         padding: 20px;
         border: 10px solid pink;
+        position: relative;
+        /* display: inline-block; */
       }
 
       #content {
         box-sizing: content-box;
       }
+
       #border {
         box-sizing: border-box;
+        position: sticky;
+        top: 100px;
+        z-index: 1;
       }
+
+      p {
+        /* color: white; */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      
 
     </style>
   </head>
   <body>
-    <div class="box" id="content"></div>
+    <div class="box" id="content">
+      <p>TEXT</p>
+    </div>
     <div class="box" id="border"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
   </body>
 </html>

@@ -51,31 +51,32 @@ div {
 /* TRANSFORM */
 
 #square {
-    /* transform: translate(250px, 50px);  */
+    /* transform: translate(250px, 50px) rotate(-30deg);  */
     /* move 250px to the right, 50px to the bottom */ 
 }
 #rectangle {
-    /* transform: skew(10deg, 45deg); */
+    /* transform: skew(10deg, 5deg); */
     /* skew 10 deg on X-axis, 45deg on Y-axis */ 
 }
 #oval {
     /* transform: rotate(-30deg); */
+    /* transform-origin: bottom left; */
     /* rotate 30deg colckwise */
 }
 #triangle {
-    /* transform: scale(1.2, 0.5); */
+    /* transform: scale(1.2, 0.7); */
     /* enlarge the width by 1.2, reduce the height by half */ 
 }
 #circle {
-    /* transform: scale(1.2, 0.5); */
+    /* transform: scale(0.5); */
     /* will work on its children too */ 
 }
 
 
 /* TRANSITIONS */
 
-/*     
-#square:hover, 
+    
+/* #square:hover, 
 #rectangle:hover, 
 #circle:hover, 
 #oval:hover {
@@ -87,7 +88,7 @@ div {
     transition: background-color 2s ease-in 0.5s;
 }
 
-#circle {
+#circle, #oval {
     transition-property: background-color, border-radius;
     transition-duration: 5s, 2s;
 }
@@ -103,7 +104,7 @@ div {
 
 /* ANIMATIONS */
 
-/*   
+  
 #square {
     animation: breathe 2s ease-in infinite alternate;
 }
@@ -118,16 +119,16 @@ div {
 }
 #triangle {
     animation: breathe 1.5s ease-in-out 5 reverse backwards;
-} */
+}
 
 @keyframes breathe {
     from {transform: scale(1, 1);}
     to   {transform: scale(1.1, 1.1);}
 }
 
-/* #circle-inside {
+#circle-inside {
     animation: rainbow 5s ease-in-out infinite alternate;
-} */
+}
 
 @keyframes colorChange {
     from {background-color: red;}
