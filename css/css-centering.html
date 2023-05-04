@@ -11,7 +11,7 @@
         margin: 0;
       }
 
-      /* flex container */
+      /* container styles */
       .container {
         padding: 0;
         margin: 0;
@@ -20,36 +20,45 @@
         margin: 50px auto;
         border: 1px solid black;
         background: beige;
-
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
       }
 
-      /* flex items */
-      .item {
+      /* item styles */
+      .centered-item {
         background: white;
         border: 1px solid black;
-
-        width: 100px;
-        height: 100px;
         padding: 10px;
-        margin: 10px;
-
         font-size: 30px;
         font-style: italic;
         line-height: 1;
-        /* transition: 1s linear; */
       }
 
-      /* flex items on hover */
-      /* li:hover {
-        width: 500px;
-        height: 500px;
-        font-size: 75px;
+      /* using flex */
+      /* .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
       } */
+
+      /* using margin: auto; */
+      /* .centered-item {
+        width: 210px;
+        margin: auto;
+      } */
+
+      /* using relative units & transform */
+      .container {
+        position: relative;
+      }
+      .centered-item {
+        width: 210px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
     </style>
   </head>
 
@@ -57,16 +66,7 @@
   <body>
 
     <div class="container">
-      <div class="item">0</div>
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-      <div class="item">9</div>
+      <div class="centered-item">I'm in the center!</div>
     </div>
 
     <a href="../index.html" id="back">back</a>

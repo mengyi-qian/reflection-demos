@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Media Query Demo</title>
+    <title>CSS Media Query Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="../assets/favicon.png" />
@@ -14,6 +14,18 @@
       p {
         display: none;
       }
+      nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      span {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid white;
+        background: orange;
+        font-size: 3rem;
+      }
       
       @media screen and (max-width: 1280px) {
         body {
@@ -24,6 +36,10 @@
       @media screen and (max-width: 1080px) {
         body {
           background-color: SkyBlue;
+        }
+        nav {
+          flex-flow: column nowrap;
+          align-items: center;
         }
       }
       
@@ -43,8 +59,11 @@
           background-color: White;
           color: Black;
         }
-        p{
+        p {
           display: block;
+        }
+        nav {
+          display: none;
         }
       }
     </style>
@@ -53,11 +72,15 @@
     
     <h1>Resize your window :)</h1>
     <p>Congratulations! You just discovered a hidden paragraph.</p>
-    
-    
-    
-    
-    
+
+    <nav>
+      <span>option 1</span>
+      <span>option 2</span>
+      <span>option 3</span>
+      <span>option 4</span>
+      <span>option 5</span>
+    </nav>
+
     <a href="../index.html" id="back">back</a>
   </body>
 </html>

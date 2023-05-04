@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Responsive Design Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      header, footer {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        background: khaki;
+      }
+      nav{
+        width: 25%;
+        background: lightgrey;
+      }
+      main {
+        width: 75%;
+        height: calc(100vh - 200px);
+        padding: 10px;
+        background: lightblue;
+        /* border-radius: 50%; */
+      }
+      
+      @media screen and (max-width: 600px) {
+        body {
+          flex-flow: column nowrap;
+        }
+        nav, main {
+          width: 100%;
+        }
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>
+      <ul>
+        <li>option 1</li>
+        <li>option 2</li>
+        <li>option 3</li>
+      </ul>
+    </nav>
+    <main>Main Content</main>
+    <footer>Footer</footer>
+
+    <a href="../index.html" id="back">back</a>
+  </body>
+</html>
