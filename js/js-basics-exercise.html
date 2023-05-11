@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Basics Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      body {
+        font-size: 50px;
+        line-height: 1.2;
+        background: lightyellow;
+      }
+      .link {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .num {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background: red;
+        color: white;
+        text-align: center;
+        display: inline-block;
+      }
+      .green {
+        background: green;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="link" onclick="this.textContent='Your Number: '+ prompt('Pick a 6-digit number:'); this.classList.remove('link');">Enter your number here</p>
+    
+    <p>
+      <span>Today's Number:</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+      <span class="num" onclick="this.textContent=Math.floor(Math.random()*10); this.classList.toggle('green');">0</span>
+    </p>
+    
+    
+    <a href="../index.html" id="back">back</a>
+    
+  </body>
+</html>

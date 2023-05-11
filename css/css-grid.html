@@ -21,7 +21,8 @@
             border: 1px inset black;
 
             display: grid;
-            /* grid-template-columns: 20% 50% 30%; */
+
+            /* grid-template-columns: 20% 70% 10%; */
             grid-template-columns: repeat(3, 1fr);
             /* grid-template-rows: 15% 85%; */
             grid-template-columns: repeat(3, 1fr);
@@ -38,15 +39,12 @@
         }
 
         .box0 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 4;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
         }
-
         .box1 {
-            grid-column: 2 / 4;
-            grid-row-start: 1 / 3;
+            grid-column: 3 / 4;
+            grid-row: 1 / 4;
         }
 
     </style>
@@ -57,7 +55,12 @@
 
     <div class="container">
         <div class="item box0">0</div>
-        <!-- <div class="item box1">1</div> -->
+        <div class="item box1">1</div>
+        <!-- 
+        <div class="item box2">2</div>
+        <div class="item box3">3</div>
+        <div class="item box4">4</div>
+        <div class="item box5">5</div> -->
     </div>
 
     <a href="../index.html" id="back">back</a>
