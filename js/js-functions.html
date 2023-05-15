@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Functions</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      .shape {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin: 10px;
+        display: inline-block;
+      }
+      p {
+        font-size: 30pt;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="displayMessage();">click me!</button>
+    <p onclick="this.textContent = random(50, 100);">99</p>
+
+    <p onclick="changeShapes();">click me to change the following shapes</p>
+    <div class="shape" id="square1"></div>
+    <div class="shape" id="square2"></div>
+    <div class="shape" id="square3"></div>
+
+    <p onclick="changeListStyles();">My favoutite fruit:</p>
+    <ul>
+      <li class="red">apple</li>
+      <li class="yellow">banana</li>
+      <li class="yellow">mango</li>
+      <li class="yellow">peach</li>
+      <li class="orange">orange</li>
+      <li class="blue">blueberry</li>
+      <li class="yellow">pineapple</li>
+      <li class="red">watermelon</li>
+    </ul>
+    
+    <a href="../index.html" id="back">back</a>
+    
+    <script src="js-functions.js"></script>
+  </body>
+</html>

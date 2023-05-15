@@ -1,1 +1,4 @@
-console.log("My JS file is loading successfully!");
+let message = "My JS file is loading successfully!";
+
+console.log(message);
+
