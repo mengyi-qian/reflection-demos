@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Event Listener Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <button onclick="darkMode();">Light Off</button>
+    <p id="text">Click and highlight me.</p>
+
+    
+    <a href="../index.html" id="back">back</a>
+    
+    <script>
+    const btn = document.querySelector('button');
+    const text = document.querySelector('#text');
+
+    function darkMode() {
+        document.body.style.backgroundColor = "#161616";
+        document.body.style.color = "#FFFFFF";
+    }
+
+    btn.addEventListener('click', darkMode);
+
+    text.addEventListener('click', function(e) {
+        e.target.style.fontWeight = "bold";
+        console.log(e.target);
+    });
+
+    window.addEventListener('mousemove', function(e) {
+        console.log("x: " + e.clientX);
+        console.log("y: " + e.clientY);
+    });
+    </script>
+  </body>
+</html>
