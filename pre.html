@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Presentation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+      body {
+        color: #0a0a0a;
+        background-color: WhiteSmoke;
+        margin-top: 2rem;
+      } 
+      html, body {
+        font-family: 'Unicorn', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+      }
+      ul,li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      #people, #randomizer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2rem;
+      }
+      #people li, #randomizer span {
+        margin-left: 1rem;
+        border: 1px solid #000;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+      }
+      #randomizer span {
+        border-radius: 50%;
+      }
+      .choosen {
+        background: gold;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      a:hover {
+        border-bottom: 1px solid black;
+      }
+      #back {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      @font-face {
+        font-family: 'Unicorn';
+        src: url('assets/fonts/Unicorn-Regular.woff') format('woff'),
+             url('assets/fonts/Unicorn-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="people">
+        <li><a href="https://cokacokacoka.github.io/-Kong-jiahui/" target="_blank">孔嘉慧 lris</a></li>
+        <li><a href="https://dingyijia.github.io/Laotou-Ding/" target="_blank">丁一珈 Lynn</a></li>
+        <li><a href="https://yimumuyiloki.github.io/brarea/" target="_blank">刘书彤 Loki</a></li>
+        <li><a href="https://honey033.github.io/honeyyy-web/" target="_blank">李涵颖 Honey</a></li>
+        <li><a href="https://junnanjii.github.io/junnanji-web/" target="_blank">冀骏楠 Saki</a></li>
+        <li><a href="https://purun1203.github.io/canger/" target="_blank">蒲润 Print</a></li>
+        <li><a href="https://linzi-jiang.github.io/zoe-webiste/" target="_blank">蒋林孜 Zoe</a></li>
+        <li><a href="https://lareina-yijia.github.io/lareina-portfolio-website/" target="_blank">王亦嘉 Lareina</a></li>
+        <li><a href="https://huantongtvt.github.io/Black/" target="_blank">杨郁波 Alarak</a></li>
+        <li><a href="https://effy278139.github.io/Effyly-s-website/" target="_blank">倪菡玟 Effy</a></li>
+        <li><a href="https://chuichuiyolo.github.io/Yolo-Website-/" target="_blank">掌星宇 Yoyo</a></li>
+        <li><a href="https://liuxinyun1213.github.io/Annie-Twister/" target="_blank">刘欣芸 Annie</a></li>
+        <li><a href="https://jenny01111.github.io/Portfolio/" target="_blank">黄浙菲 Jenny</a></li>
+        <li><a href="https://goodnight-chen233.github.io/chen-profiolo-/" target="_blank">陈龙 Chen</a></li>
+        <li><a href="https://mintttto.github.io/SoftGrass/" target="_blank">屈逸菲 Anne</a></li>
+        <li><a href="https://xiiiii.github.io/L-U-O/" target="_blank">张珞 Laura</a></li>
+        <li><a href="https://yoaecho.github.io/What-is-Yoa-doing/" target="_blank">郑宥安 Echo</a></li>
+        <li><a href="https://shaominxuan.github.io/shao-s-portfolio/" target="_blank">邵闵煊 Miranda</a></li>
+        <li><a href="https://pomamamama.github.io/POMA-FINAL/" target="_blank">马鸣泽 Poma</a></li>
+        <li><a href="https://artemismyx.github.io/final/" target="_blank">马语兮 Rogue</a></li>
+        <li><a href="https://antuyaran.github.io/kejingrankira/" target="_blank">柯婧然 Kira</a></li>
+        <li><a href="" target="_blank">杜世欣 Dudu</a></li>
+        <li><a href="https://lonyuqi.github.io/NEW-1/" target="_blank">龙宇祺 Phoebe</a></li>
+        <li><a href="https://jszjanejsz.github.io/website/" target="_blank">蒋世贞 Jane</a></li>
+        <li><a href="https://paraluqin.github.io/haihai/" target="_blank">陆钦 Para</a></li>
+        <li><a href="https://danniechenmengdan.github.io/final_website/" target="_blank">陈梦丹 Dannie</a></li>
+        <li><a href="https://shinra150.github.io/ryan-website/" target="_blank">张辰玥 Ryan</a></li>
+        <li><a href="https://yiyiming528.github.io/xxxuminng/" target="_blank">徐一鸣 Grace</a></li>
+        <li><a href="https://momooo3.github.io/momooo-schoolwork/" target="_blank">陈奕文 Chen</a></li>
+    </ul>
+    <div id="randomizer"><span>?</span></div>
+
+    <a href="index.html" id="back">back</a>
+    
+    <script>
+      
+        // Generate Random People
+        let people = $('#people li')
+        let peopleArr = Array.from(people)
+        let index = 0
+        
+        const getRandomPeople = function (){
+          peopleArr[index].classList.add('choosen')
+          peopleArr.splice(index, 1)
+          console.log(peopleArr)
+        }
+        
+        const resetRandomizer = function (){
+          $('#people li').removeClass('choosen')
+          peopleArr = Array.from(people)
+          console.log(peopleArr)
+        }
+        
+        $('#randomizer').click(function() {
+          if (peopleArr.length > 0) {
+            index = Math.floor(Math.random()* peopleArr.length)
+            getRandomPeople()
+          } else {
+            resetRandomizer()
+          }     
+        })
+        
+      </script>
+  </body>
+</html>
